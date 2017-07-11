@@ -7,7 +7,7 @@ using System.Text;
  * Name: Zilang Liang
  * Date: July 11, 2017
  * Description: SuperHuman Class that extends the HUman Abstract class
- * Version: 0.3 - Added _initialize method
+ * Version: 0.4 - Added DisplayPower method
 */
 
 namespace COMP123_S2017_Lesson9B
@@ -63,6 +63,17 @@ namespace COMP123_S2017_Lesson9B
         public void AddPower(string name, int rank)
         {
             this.powers.Add(new Power(name, rank));
+        }
+
+        /// <summary>
+        /// This method displays each of the Powers stored in the Powers List
+        /// </summary>
+        public void DisplayPowers()
+        {
+            foreach(Power power in this.powers)
+            {
+                Console.WriteLine("Power: " + power.Name + " Rank: " + power.Rank);
+            }
         }
     }
 }
