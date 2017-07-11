@@ -19,7 +19,16 @@ namespace COMP123_S2017_Lesson9B
     {
         //PRIVATE INSTANCE VARIABLES
         private List<Power> _powers;
+
         //PUBLIC PROPERTIES
+        public List<Power> powers
+        {
+            get
+            {
+                return this._powers;//this returns a reference
+            }
+        }
+
 
         //CONSTRUCTOR
 
