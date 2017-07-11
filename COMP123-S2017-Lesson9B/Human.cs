@@ -45,7 +45,7 @@ namespace COMP123_S2017_Lesson9B
         {
             this.Name = name;
         }
-
+        
         //PRIVATE METHODS
 
         //PUBLIC METHODS
